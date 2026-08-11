@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — AdPe | Zentrix AI Technologies Pvt Ltd</title>
+<meta name="description" content="Privacy Policy for AdPe, the marketing platform operated by Zentrix AI Technologies Pvt Ltd. India-focused, aligned to the DPDP Act 2023 and DPDP Rules 2025.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 90px; }
+  body {
+    margin: 0;
+    background: #FBFBFD;
+    color: #0A1633;
+    font-family: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15.5px;
+    line-height: 1.72;
+  }
+  a { color: #1B4BFF; text-decoration: none; }
+  a:hover { color: #0A1633; }
+  img { max-width: 100%; }
+
+  .shell { max-width: 1140px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 28px); }
+
+  /* ---------- header ---------- */
+  header.site {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(251, 251, 253, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(10, 22, 51, 0.06);
+  }
+  header.site nav {
+    max-width: 1140px; margin: 0 auto;
+    padding: 15px clamp(18px, 4vw, 28px);
+    display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  }
+  header.site .logo { display: flex; align-items: center; flex-shrink: 0; }
+  header.site .logo img { height: 34px; width: auto; display: block; }
+  .navlinks { margin-left: auto; display: flex; align-items: center; gap: 26px; font-size: 14.5px; font-weight: 500; }
+  .navlinks a { color: #4A5674; }
+  .navlinks a:hover { color: #1B4BFF; }
+  .cta {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 14.5px; font-weight: 600; color: #FBFBFD; background: #0A1633;
+    padding: 10px 19px; border-radius: 999px;
+    transition: transform .18s ease, background .18s ease;
+  }
+  .cta:hover { transform: translateY(-1px); background: #1B4BFF; color: #fff; }
+
+  /* ---------- hero ---------- */
+  .hero { border-bottom: 1px solid rgba(10, 22, 51, 0.06); padding: clamp(44px, 6vw, 76px) 0 clamp(34px, 4vw, 48px); }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #1B4BFF; margin-bottom: 15px;
+  }
+  .hero h1 { font-size: clamp(34px, 5.4vw, 54px); line-height: 1.08; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 16px; }
+  .hero .sub { font-size: clamp(16px, 1.8vw, 18.5px); line-height: 1.6; color: #4A5674; max-width: 640px; margin: 0; }
+
+  .meta-grid {
+    margin-top: clamp(28px, 3.4vw, 40px);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    gap: 1px; background: rgba(10, 22, 51, 0.08);
+    border: 1px solid rgba(10, 22, 51, 0.08); border-radius: 14px; overflow: hidden;
+  }
+  .meta-grid .cell { background: #fff; padding: 17px 20px; }
+  .meta-grid .k {
+    font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #8C97B2; margin-bottom: 6px;
+  }
+  .meta-grid .v { font-size: 14.5px; font-weight: 600; line-height: 1.45; }
+
+  /* ---------- layout ---------- */
+  .layout {
+    display: grid; grid-template-columns: 244px minmax(0, 1fr);
+    gap: clamp(32px, 5vw, 68px);
+    padding: clamp(38px, 4.5vw, 60px) 0 clamp(48px, 6vw, 84px);
+    align-items: start;
+  }
+  nav.toc { position: sticky; top: 92px; max-height: calc(100vh - 120px); overflow-y: auto; padding-right: 6px; }
+  nav.toc .toc-head {
+    font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #8C97B2; margin-bottom: 14px;
+  }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+  nav.toc a {
+    display: grid; grid-template-columns: 26px 1fr; gap: 4px;
+    font-size: 13.6px; line-height: 1.45; color: #3A4664;
+    padding: 6px 9px; border-radius: 8px;
+    transition: background .15s ease, color .15s ease;
+  }
+  nav.toc a:hover { background: rgba(27, 75, 255, 0.07); color: #1B4BFF; }
+  nav.toc a.active { background: rgba(27, 75, 255, 0.09); color: #1B4BFF; font-weight: 600; }
+  nav.toc .n { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #8C97B2; padding-top: 1px; }
+  nav.toc a:hover .n, nav.toc a.active .n { color: #1B4BFF; }
+
+  /* ---------- content ---------- */
+  article { max-width: 760px; }
+  article section { scroll-margin-top: 92px; padding-bottom: clamp(30px, 3.4vw, 44px); }
+  article section + section { border-top: 1px solid rgba(10, 22, 51, 0.07); padding-top: clamp(30px, 3.4vw, 44px); }
+  article h2 {
+    font-size: clamp(22px, 2.6vw, 27px); line-height: 1.25; font-weight: 700;
+    letter-spacing: -0.015em; margin: 0 0 18px;
+    display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: baseline;
+  }
+  article h2 .num { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; color: #1B4BFF; }
+  article h3 { font-size: 17px; font-weight: 700; margin: 30px 0 12px; letter-spacing: -0.01em; }
+  article p { margin: 0 0 15px; color: #29344F; }
+  article p:last-child { margin-bottom: 0; }
+  article ul { margin: 0 0 15px; padding-left: 0; list-style: none; display: grid; gap: 10px; }
+  article ul li { position: relative; padding-left: 22px; color: #29344F; }
+  article ul li::before {
+    content: ""; position: absolute; left: 4px; top: 11px;
+    width: 5px; height: 5px; border-radius: 50%; background: #1B4BFF;
+  }
+  article ul li a { font-weight: 500; }
+
+  .callout {
+    background: #fff; border: 1px solid rgba(10, 22, 51, 0.09);
+    border-left: 3px solid #1B4BFF; border-radius: 12px;
+    padding: 20px 22px; margin: 0 0 22px;
+  }
+  .callout .label {
+    font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #8C97B2; margin-bottom: 9px;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+
+  .table-wrap { overflow-x: auto; margin: 0 0 20px; border: 1px solid rgba(10, 22, 51, 0.09); border-radius: 12px; background: #fff; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 14.3px; }
+  thead th {
+    text-align: left; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px;
+    letter-spacing: 0.1em; text-transform: uppercase; color: #8C97B2; font-weight: 500;
+    padding: 13px 18px; border-bottom: 1px solid rgba(10, 22, 51, 0.09); white-space: nowrap;
+  }
+  tbody td { padding: 14px 18px; vertical-align: top; line-height: 1.62; color: #29344F; border-bottom: 1px solid rgba(10, 22, 51, 0.06); }
+  tbody tr:last-child td { border-bottom: 0; }
+  tbody td:first-child { font-weight: 600; color: #0A1633; width: 32%; min-width: 165px; }
+
+  .ph { font-family: 'IBM Plex Mono', monospace; font-size: 0.92em; color: #6B7794; background: rgba(10, 22, 51, 0.05); padding: 1px 5px; border-radius: 4px; }
+  .closing { font-style: italic; color: #6B7794; font-size: 14.3px; line-height: 1.7; margin: 26px 0 0; }
+
+  /* ---------- footer ---------- */
+  footer.site { border-top: 1px solid rgba(10, 22, 51, 0.07); padding: clamp(40px, 5vw, 58px) 0 30px; }
+  .foot-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 36px; flex-wrap: wrap; padding-bottom: 36px; }
+  .foot-brand { max-width: 280px; }
+  .foot-brand img { height: 30px; width: auto; display: block; margin-bottom: 14px; }
+  .foot-brand p { font-size: 14.5px; line-height: 1.6; color: #6B7794; margin: 0; }
+  .foot-cols { display: flex; gap: clamp(30px, 6vw, 72px); flex-wrap: wrap; }
+  .foot-cols > div { display: grid; gap: 11px; align-content: start; }
+  .foot-cols .h {
+    font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #8C97B2; margin-bottom: 3px;
+  }
+  .foot-cols a { font-size: 14.5px; color: #3A4664; }
+  .foot-cols a:hover { color: #1B4BFF; }
+  .foot-bottom {
+    padding-top: 24px; border-top: 1px solid rgba(10, 22, 51, 0.07);
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 14px; flex-wrap: wrap; font-size: 13px; color: #8C97B2;
+  }
+  .foot-bottom .mono { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.08em; }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+    nav.toc {
+      position: static; max-height: none;
+      background: #fff; border: 1px solid rgba(10, 22, 51, 0.09);
+      border-radius: 14px; padding: 20px;
+    }
+    nav.toc ol { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  }
+  @media (max-width: 600px) {
+    .navlinks { display: none; }
+    .foot-cols { gap: 26px; }
+    .foot-cols > div { min-width: 130px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <nav>
+    <a class="logo" href="index.html"><img src="data:image/png;base64,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" alt="AdPe — UBI Karo"></a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="business.html">For business</a>
+    </div>
+    <a class="cta" href="index.html#download">Get the app</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="shell">
+    <div class="eyebrow">ADPE</div>
+    <h1>Privacy Policy</h1>
+    <p class="sub">India-focused draft for Zentrix AI Technologies Pvt Ltd</p>
+
+    <div class="meta-grid">
+      <div class="cell">
+        <div class="k">Company</div>
+        <div class="v">Zentrix AI Technologies Pvt Ltd</div>
+      </div>
+      <div class="cell">
+        <div class="k">Platform</div>
+        <div class="v">AdPe – marketing platform connecting Producers and Consumers</div>
+      </div>
+      <div class="cell">
+        <div class="k">Version</div>
+        <div class="v">1.0</div>
+      </div>
+      <div class="cell">
+        <div class="k">Prepared on</div>
+        <div class="v">6 August 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="shell">
+  <div class="layout">
+
+    <nav class="toc" aria-label="Contents">
+      <div class="toc-head">Contents</div>
+      <ol>
+        <li><a href="#s1"><span class="n">1.</span><span>About this Policy</span></a></li>
+        <li><a href="#s2"><span class="n">2.</span><span>Regulatory Alignment in India</span></a></li>
+        <li><a href="#s3"><span class="n">3.</span><span>Who this Policy Applies To</span></a></li>
+        <li><a href="#s4"><span class="n">4.</span><span>Personal Data We Collect</span></a></li>
+        <li><a href="#s5"><span class="n">5.</span><span>How We Collect Personal Data</span></a></li>
+        <li><a href="#s6"><span class="n">6.</span><span>How and Why We Use Personal Data</span></a></li>
+        <li><a href="#s7"><span class="n">7.</span><span>Consent, Advertising and Marketing Preferences</span></a></li>
+        <li><a href="#s8"><span class="n">8.</span><span>Cookies, SDKs and Similar Technologies</span></a></li>
+        <li><a href="#s9"><span class="n">9.</span><span>How We Share Personal Data</span></a></li>
+        <li><a href="#s10"><span class="n">10.</span><span>Producer and Third-Party Responsibilities</span></a></li>
+        <li><a href="#s11"><span class="n">11.</span><span>Cross-Border Processing</span></a></li>
+        <li><a href="#s12"><span class="n">12.</span><span>Data Retention and Deletion</span></a></li>
+        <li><a href="#s13"><span class="n">13.</span><span>Security and Personal Data Breaches</span></a></li>
+        <li><a href="#s14"><span class="n">14.</span><span>Children’s Privacy</span></a></li>
+        <li><a href="#s15"><span class="n">15.</span><span>Your Rights and Choices</span></a></li>
+        <li><a href="#s16"><span class="n">16.</span><span>Grievance Redressal and Contact Details</span></a></li>
+        <li><a href="#s17"><span class="n">17.</span><span>Changes to this Policy</span></a></li>
+        <li><a href="#s18"><span class="n">18.</span><span>Governing Law</span></a></li>
+      </ol>
+    </nav>
+
+    <article>
+
+      <div class="callout">
+        <div class="label">Important drafting assumption</div>
+        <p>AdPe enables Producers (such as brands, advertisers, sellers and service providers) to reach Consumers through campaigns, offers, content and related interactions. Optional features such as purchases, rewards, payouts, precise location, identity verification or financial processing are covered only where actually enabled.</p>
+      </div>
+
+      <section id="s1">
+        <h2><span class="num">01</span><span>About this Policy</span></h2>
+        <p>Zentrix AI Technologies Pvt Ltd (“Zentrix”, “we”, “us” or “our”) operates AdPe, a digital marketing platform that connects Producers with Consumers. This Privacy Policy explains how we collect, use, store, disclose, protect and otherwise process personal data when you use the AdPe mobile application, website, producer portal, campaign interfaces, customer-support channels, related services or other points where this Policy is displayed (collectively, the “Platform”).</p>
+        <p>For personal data that Zentrix determines the purpose and means of processing, Zentrix acts as the Data Fiduciary (or, under currently applicable terminology, the body corporate responsible for the information). In certain arrangements, Zentrix may process data only on documented instructions from a Producer or another business customer, in which case that party may be the Data Fiduciary and Zentrix may act as its Data Processor.</p>
+        <p>This Policy does not replace any separate campaign-specific notice, consent screen, producer notice, cookie notice or contractual data-processing terms. Where a more specific notice applies, it should be read together with this Policy.</p>
+      </section>
+
+      <section id="s2">
+        <h2><span class="num">02</span><span>Regulatory Alignment in India</span></h2>
+        <p>This draft is designed to support compliance, as applicable, with the following Indian legal and regulatory framework:</p>
+        <ul>
+          <li><a href="https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf" target="_blank" rel="noopener">Digital Personal Data Protection Act, 2023</a> – including notice, consent, Data Fiduciary obligations, individual rights, children’s data and breach-related obligations as they come into force.</li>
+          <li><a href="https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf" target="_blank" rel="noopener">Digital Personal Data Protection Rules, 2025</a> – including detailed requirements on notices, security safeguards, breach intimation, rights mechanisms, grievance handling and transfers as they come into force.</li>
+          <li><a href="https://www.meity.gov.in/static/uploads/2025/11/c56ceae6c383460ca69577428d36828b.pdf" target="_blank" rel="noopener">DPDP Act commencement notification dated 13 November 2025</a> – which provides phased commencement dates.</li>
+          <li><a href="https://upload.indiacode.nic.in/showfile?actid=AC_CEN_45_76_00001_200021_1517807324077&amp;filename=GSR313E_10511%281%29_0.pdf&amp;type=rule" target="_blank" rel="noopener">Information Technology Act, 2000 and the SPDI Rules, 2011</a> – including privacy-policy, consent, purpose limitation, retention, disclosure, transfer, security and grievance requirements during the transition period.</li>
+          <li><a href="https://consumeraffairs.gov.in/public/upload/files/E%20commerce%20rules_1732703966.pdf" target="_blank" rel="noopener">Consumer Protection Act, 2019 and Consumer Protection (E-Commerce) Rules, 2020, as amended</a> – where AdPe functions as an e-commerce or marketplace entity, including transparent and non-deceptive consent practices.</li>
+          <li><a href="https://trai.gov.in/tcccpr" target="_blank" rel="noopener">Telecom Commercial Communications Customer Preference Regulations, 2018, as amended</a> – for promotional SMS, voice calls and other regulated commercial communications, where applicable.</li>
+          <li><a href="https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf" target="_blank" rel="noopener">Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, as amended</a> – where AdPe qualifies as an intermediary hosting or transmitting third-party content.</li>
+        </ul>
+        <p>If applicable law changes or a competent authority issues a binding direction, we will update our practices and this Policy. Where different requirements apply, we will follow the stricter requirement to the extent reasonably practicable and legally permitted.</p>
+      </section>
+
+      <section id="s3">
+        <h2><span class="num">03</span><span>Who this Policy Applies To</span></h2>
+        <p>This Policy applies to personal data relating to the following categories of people:</p>
+        <ul>
+          <li>Consumers who create an account, browse content, view or respond to campaigns, claim offers, contact Producers, make purchases, participate in surveys or use other Platform features.</li>
+          <li>Producer personnel, including authorised employees, agents, campaign managers, customer-support representatives and billing or finance contacts.</li>
+          <li>Visitors to the AdPe website, mobile application and public pages.</li>
+          <li>Individuals who contact us for support, submit grievances, apply to work with us, attend events, participate in research or otherwise interact with Zentrix.</li>
+          <li>Other individuals whose personal data is lawfully provided to us by a Producer, service provider, business partner or public source.</li>
+        </ul>
+        <p>The Platform is intended for adults. Please see <a href="#s14">Section 14</a> for our approach to children’s personal data.</p>
+      </section>
+
+      <section id="s4">
+        <h2><span class="num">04</span><span>Personal Data We Collect</span></h2>
+        <p>The data we collect depends on your role, the features you use, the permissions you grant and the particular campaign or transaction. We seek to collect only personal data that is reasonably necessary for the stated purpose.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Category</th><th>Illustrative examples</th></tr></thead>
+            <tbody>
+              <tr><td>Identity and account data</td><td>Name, username, profile image, age or date-of-birth confirmation, gender or preferred language where voluntarily provided, account identifiers and login credentials.</td></tr>
+              <tr><td>Contact data</td><td>Mobile number, email address, postal or delivery address and communication preferences.</td></tr>
+              <tr><td>Producer and business data</td><td>Organisation name, designation, business contact details, tax or registration information, authorised-user details, campaign information and billing contacts.</td></tr>
+              <tr><td>Campaign and engagement data</td><td>Ads, offers or content displayed; impressions; clicks; responses; saved items; redemptions; referrals; surveys; feedback; campaign participation; and communication history.</td></tr>
+              <tr><td>Transaction and fulfilment data</td><td>Order, booking, delivery, invoice, refund, reward or redemption information, where the Platform enables such features.</td></tr>
+              <tr><td>Payment and payout data</td><td>Limited payment status, payment token, masked account or instrument details and transaction references. Full card or banking credentials should ordinarily be processed by regulated payment providers rather than stored by AdPe.</td></tr>
+              <tr><td>Device and technical data</td><td>IP address, device type, operating system, app version, browser, language, time zone, device or advertising identifiers, network information, crash logs and security events.</td></tr>
+              <tr><td>Location data</td><td>Approximate location inferred from IP or network signals, and precise location only where the feature requires it and you provide device-level permission.</td></tr>
+              <tr><td>Communications and support data</td><td>Messages, emails, call records where legally permitted, complaint details, support tickets and documents you submit.</td></tr>
+              <tr><td>Verification and fraud-prevention data</td><td>Information used to verify identity, age, authority to represent a Producer, detect duplicate or fraudulent accounts and protect the Platform.</td></tr>
+              <tr><td>Inferences and preference data</td><td>Interests, categories, likely preferences or recommended content inferred from information you provide and your Platform activity, subject to applicable consent and preference controls.</td></tr>
+              <tr><td>Sensitive personal data</td><td>We do not seek health, biometric, financial credentials, passwords or other sensitive data unless necessary for a clearly identified feature, legally permitted, specifically disclosed and protected with enhanced safeguards.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Do not submit unnecessary sensitive data through free-text fields, messages or campaign responses. Producers must not design campaigns that request sensitive data unless the collection is lawful, proportionate, separately disclosed and approved through AdPe’s compliance process.</p>
+      </section>
+
+      <section id="s5">
+        <h2><span class="num">05</span><span>How We Collect Personal Data</span></h2>
+        <ul>
+          <li>Directly from you, when you register, complete your profile, respond to a campaign, make a purchase, contact support, submit a grievance or communicate with us.</li>
+          <li>Automatically from your device and use of the Platform, through logs, cookies, SDKs, device permissions and similar technologies.</li>
+          <li>From Producers, for example when a Producer uploads authorised business contacts, fulfils a consumer request, reports a transaction or provides campaign response data.</li>
+          <li>From service providers and partners, such as authentication, analytics, fraud-prevention, payment, delivery, communication, hosting or customer-support providers.</li>
+          <li>From publicly available or legally accessible sources, subject to applicable law and reasonable expectations.</li>
+        </ul>
+        <p>Where we receive personal data from another party, that party must have a lawful basis and appropriate authority to provide it to us. We may request evidence of notice or consent where required.</p>
+      </section>
+
+      <section id="s6">
+        <h2><span class="num">06</span><span>How and Why We Use Personal Data</span></h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Purpose</th><th>What this includes</th></tr></thead>
+            <tbody>
+              <tr><td>Provide and operate the Platform</td><td>Create and manage accounts; authenticate users; connect Producers and Consumers; display campaigns, products, services and offers; facilitate responses and communications.</td></tr>
+              <tr><td>Personalise experience and advertising</td><td>Recommend content, categories, campaigns or offers based on user-selected preferences, contextual information and permitted engagement signals.</td></tr>
+              <tr><td>Complete transactions and fulfilment</td><td>Process orders, bookings, rewards, redemptions, payouts, refunds, invoices and related communications where applicable.</td></tr>
+              <tr><td>Communicate with users</td><td>Send service notices, security alerts, campaign updates, requested information, customer-support responses and marketing communications in line with preferences and applicable law.</td></tr>
+              <tr><td>Measure and improve</td><td>Analyse Platform performance, campaign effectiveness, usability and aggregate trends; test features; fix errors; conduct research and improve models and recommendations.</td></tr>
+              <tr><td>Safety, integrity and fraud prevention</td><td>Detect abuse, fake engagement, duplicate accounts, unauthorised access, harmful content, policy violations, fraud and security threats.</td></tr>
+              <tr><td>Legal and regulatory compliance</td><td>Maintain records, respond to lawful requests, enforce terms, resolve disputes, protect rights and meet tax, accounting, consumer-protection, telecom, cyber-security and data-protection obligations.</td></tr>
+              <tr><td>Corporate operations</td><td>Administer contracts, vendor relationships, audits, due diligence, corporate transactions and business continuity.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>We process personal data based on your consent, a specific purpose for which you voluntarily provided the data, a permitted legitimate use under applicable Indian law, compliance with law or another lawful ground. We will not use personal data for a materially unrelated purpose without providing an additional notice and obtaining consent where required.</p>
+        <p>Where algorithms or AI systems are used for recommendations, fraud detection, campaign matching or measurement, we will implement proportionate controls to reduce unfair, discriminatory or unexpected outcomes. Significant decisions with material effects should not be made solely through automated processing without appropriate review, where required by law or our internal risk standards.</p>
+      </section>
+
+      <section id="s7">
+        <h2><span class="num">07</span><span>Consent, Advertising and Marketing Preferences</span></h2>
+        <p>AdPe is a marketing platform. We therefore use clear, purpose-specific notices and preference controls for advertising and marketing activities.</p>
+        <ul>
+          <li>Consent requests should be presented in clear and plain language and should identify the personal data requested, the purpose, the relevant service or campaign, and how consent can be withdrawn.</li>
+          <li>Consent should be based on a clear affirmative action. Pre-ticked boxes, bundled consent, misleading interfaces or consent obtained through dark patterns should not be used.</li>
+          <li>You may withdraw consent through account settings, campaign controls, an unsubscribe link, device settings or by contacting us. Withdrawal should be as easy as giving consent, subject to reasonable identity verification.</li>
+          <li>Withdrawal does not affect processing already lawfully carried out. Certain service or transactional communications may continue when necessary to complete a request, protect your account or comply with law.</li>
+          <li>Promotional SMS or voice communications will be sent only through compliant sender and consent arrangements and subject to applicable telecom preferences and opt-out mechanisms.</li>
+          <li>We do not use sensitive personal data to target advertising unless the use is lawful, separately disclosed, strictly necessary and specifically consented to. As a default, AdPe should prohibit targeting based on health, biometric, financial-credential, sexual-orientation or similar sensitive categories.</li>
+          <li>We do not sell or rent personal data for monetary consideration. We may disclose data to Producers and service providers as described in this Policy to deliver the Platform, campaigns and requested services.</li>
+        </ul>
+      </section>
+
+      <section id="s8">
+        <h2><span class="num">08</span><span>Cookies, SDKs and Similar Technologies</span></h2>
+        <p>We may use cookies, mobile software development kits (SDKs), pixels, local storage, device identifiers and similar technologies to keep users signed in, remember preferences, maintain security, measure campaigns, analyse performance and, where permitted, personalise content or advertising.</p>
+        <p>Before publication, Zentrix should maintain a separate Cookie and SDK Notice that lists the actual technologies, providers, purpose, data collected, duration and available controls. Non-essential advertising or analytics technologies should be activated only in accordance with applicable notice and consent requirements.</p>
+        <p>You can manage certain technologies through AdPe settings, browser controls, mobile operating-system permissions and advertising-identifier controls. Blocking essential technologies may affect Platform functionality.</p>
+      </section>
+
+      <section id="s9">
+        <h2><span class="num">09</span><span>How We Share Personal Data</span></h2>
+        <p>We may disclose personal data only for a stated lawful purpose, with appropriate contractual and security protections, and in a manner consistent with your notice and consent. Recipients may include:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Recipient</th><th>Purpose and safeguards</th></tr></thead>
+            <tbody>
+              <tr><td>Producers</td><td>To deliver a campaign, respond to an enquiry, fulfil a purchase or redemption, provide a requested offer, prevent fraud, measure agreed campaign results or enable a direct relationship you choose to initiate. Identifiable data should be limited to what is necessary and disclosed in the relevant notice.</td></tr>
+              <tr><td>Service providers / Data Processors</td><td>Cloud hosting, authentication, communications, analytics, customer support, security, fraud prevention, payment, delivery, storage, professional advice and other vendors acting under contract.</td></tr>
+              <tr><td>Payment and financial partners</td><td>Payment gateways, banks, payout providers or regulated financial institutions where needed for payments, refunds, rewards or verification.</td></tr>
+              <tr><td>Affiliates and corporate parties</td><td>Zentrix group entities, investors, acquirers, advisers or counterparties for financing, restructuring, merger, acquisition or sale, subject to confidentiality and legal safeguards.</td></tr>
+              <tr><td>Authorities and legal recipients</td><td>Courts, tribunals, regulators, law-enforcement agencies or government authorities where required or authorised by applicable law, valid legal process or to protect rights and safety.</td></tr>
+              <tr><td>With your direction or consent</td><td>Any other recipient you direct us to share with or for whom you provide specific consent.</td></tr>
+              <tr><td>Aggregated or de-identified information</td><td>Statistics and insights that do not identify an individual may be shared for campaign reporting, research, benchmarking and service improvement. We will take reasonable steps to reduce re-identification risk.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>We do not publish sensitive personal data. A third party receiving personal data must not use or disclose it beyond the agreed purpose unless independently authorised by law and responsible for providing its own notice.</p>
+      </section>
+
+      <section id="s10">
+        <h2><span class="num">10</span><span>Producer and Third-Party Responsibilities</span></h2>
+        <p>A Producer may be an independent Data Fiduciary for personal data it collects or receives for its own purposes, such as order fulfilment, customer relationship management, warranty, post-sale support or independent marketing. In those cases, the Producer’s privacy notice and practices also apply.</p>
+        <ul>
+          <li>Producers must collect only data necessary for a legitimate campaign or transaction and must not request prohibited or excessive data.</li>
+          <li>Producers must provide clear campaign-specific disclosures where they will receive identifiable Consumer data or contact the Consumer outside AdPe.</li>
+          <li>Producers must honour withdrawals, marketing preferences, access or correction requests that relate to their independent processing.</li>
+          <li>Producers must protect data, restrict access, retain it only as long as necessary and notify Zentrix promptly of any suspected breach involving AdPe data.</li>
+          <li>Zentrix may suspend a campaign, restrict data access, investigate a Producer or terminate access where privacy, security, consumer-protection or platform rules are violated.</li>
+        </ul>
+        <p>Links or integrations may lead to third-party websites or applications that Zentrix does not control. Their privacy policies apply to their processing. We encourage you to review those policies before providing data.</p>
+      </section>
+
+      <section id="s11">
+        <h2><span class="num">11</span><span>Cross-Border Processing</span></h2>
+        <p>AdPe may use cloud, analytics, support or security providers that process personal data in India or other countries. Before publication, Zentrix must identify the actual hosting and support locations and assess applicable restrictions.</p>
+        <p>Where personal data is transferred outside India, we will take reasonable steps to ensure an appropriate level of protection through contractual, technical and organisational safeguards; transfer only where necessary for a lawful purpose or where consent or another lawful ground applies; and comply with any country, sector or data-category restrictions notified by the Government of India or another competent authority.</p>
+        <p>Certain regulated data may be subject to localisation or sector-specific requirements. Those requirements will prevail over this general statement.</p>
+      </section>
+
+      <section id="s12">
+        <h2><span class="num">12</span><span>Data Retention and Deletion</span></h2>
+        <p>We retain personal data only for as long as necessary for the specified purpose, to provide the Platform, maintain security and integrity, resolve disputes, enforce agreements and meet legal, tax, accounting, audit or regulatory requirements.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Data type</th><th>Draft retention approach – complete before publication</th></tr></thead>
+            <tbody>
+              <tr><td>Account and profile data</td><td><span class="ph">[Account life + defined closure period]</span>, unless earlier deletion is requested or longer retention is legally required.</td></tr>
+              <tr><td>Campaign and engagement data</td><td><span class="ph">[Define period by campaign type]</span>, with identifiable data minimised or aggregated after the operational purpose ends.</td></tr>
+              <tr><td>Transactions, invoices and payouts</td><td><span class="ph">[Typically 8 financial years or the period required by tax/accounting law – confirm with counsel and finance]</span>.</td></tr>
+              <tr><td>Support and grievance records</td><td><span class="ph">[At least until closure plus limitation/audit period]</span>.</td></tr>
+              <tr><td>Security logs and incident data</td><td>At least the period required by applicable cyber-security and data-protection rules; DPDP operational rules contemplate retention of specified logs and related data for at least one year once applicable.</td></tr>
+              <tr><td>Marketing preferences and consent records</td><td>For as long as needed to demonstrate consent, withdrawal and suppression preferences.</td></tr>
+              <tr><td>Backups</td><td>Deleted or de-identified through routine backup rotation, subject to security, legal-hold and disaster-recovery requirements.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>When consent is withdrawn or the purpose is no longer served, we will erase or de-identify the relevant data and instruct applicable Data Processors to do the same, unless retention is required or authorised by law. We may retain a limited suppression record to ensure that an opt-out continues to be respected.</p>
+      </section>
+
+      <section id="s13">
+        <h2><span class="num">13</span><span>Security and Personal Data Breaches</span></h2>
+        <p>We use reasonable and proportionate technical, organisational, managerial, operational and physical safeguards designed to protect personal data against unauthorised access, disclosure, alteration, loss, misuse or destruction. Depending on risk and system design, safeguards should include:</p>
+        <ul>
+          <li>Encryption in transit and, where appropriate, at rest; masking, tokenisation or obfuscation for selected data.</li>
+          <li>Role-based access, least-privilege permissions, multi-factor authentication for privileged accounts and periodic access reviews.</li>
+          <li>Secure software-development practices, vulnerability management, penetration testing and timely remediation.</li>
+          <li>Security monitoring, audit logs, anomaly detection, backups, business continuity and disaster-recovery controls.</li>
+          <li>Vendor due diligence, data-processing agreements, confidentiality obligations and contractual security requirements.</li>
+          <li>Employee privacy and security training, incident-response procedures and disciplinary controls.</li>
+          <li>Data minimisation, environment separation, test-data controls and secure deletion.</li>
+        </ul>
+        <p>No system is completely secure. If a personal data breach occurs, we will investigate, contain and remediate it; maintain appropriate records; and notify affected individuals, the Data Protection Board of India, CERT-In or other competent authorities without delay and within the timelines required by applicable law. Notices will describe the breach, likely effects, mitigation measures, protective steps and a contact point, to the extent known and legally permitted.</p>
+        <p>Users should protect their credentials, use strong passwords, avoid sharing one-time passwords and promptly report suspicious activity to <span class="ph">[security@company-domain.com]</span>.</p>
+      </section>
+
+      <section id="s14">
+        <h2><span class="num">14</span><span>Children’s Privacy</span></h2>
+        <p>The Platform is not intended for children under 18, and we do not knowingly permit them to create Consumer or Producer accounts. We may use proportionate age-assurance measures to confirm that a user is an adult.</p>
+        <p>If Zentrix later introduces a service intended for children, it must implement verifiable parental or lawful-guardian consent before processing; avoid processing likely to cause a detrimental effect on a child’s well-being; prohibit tracking, behavioural monitoring and targeted advertising directed at children; and comply with all additional safeguards and exemptions prescribed under applicable law.</p>
+        <p>A parent or guardian who believes a child has provided personal data may contact <span class="ph">[privacy email]</span>. We will review the request and take appropriate steps, including restriction or deletion, subject to legal requirements and reasonable verification.</p>
+      </section>
+
+      <section id="s15">
+        <h2><span class="num">15</span><span>Your Rights and Choices</span></h2>
+        <p>Subject to applicable law, phased commencement and reasonable identity verification, you may have the following rights and choices:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Right or choice</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td>Access and information</td><td>Request a summary of personal data being processed, processing activities and the identities or categories of recipients, to the extent required by law.</td></tr>
+              <tr><td>Correction, completion and updating</td><td>Correct inaccurate or misleading data, complete incomplete data and update personal data.</td></tr>
+              <tr><td>Erasure</td><td>Request deletion where the purpose is complete, consent has been withdrawn or processing is no longer lawful, subject to legal retention and other permitted grounds.</td></tr>
+              <tr><td>Withdraw consent</td><td>Withdraw consent through the same or comparably easy means used to provide it.</td></tr>
+              <tr><td>Marketing and advertising choices</td><td>Opt out of promotional messages, adjust interest categories, control personalised advertising and manage device permissions.</td></tr>
+              <tr><td>Grievance redressal</td><td>Raise a complaint about our processing or failure to honour a request.</td></tr>
+              <tr><td>Nomination</td><td>When the relevant DPDP provisions apply, nominate another individual to exercise rights in the event of death or incapacity.</td></tr>
+              <tr><td>Consent Manager</td><td>When the statutory framework becomes operational, manage, review or withdraw consent through a registered Consent Manager where supported.</td></tr>
+              <tr><td>Complaint to the Board</td><td>After using our grievance mechanism, approach the Data Protection Board of India where the right is available and applicable.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>To make a request, use <span class="ph">[in-app privacy request link]</span> or email <span class="ph">[privacy@company-domain.com]</span> from your registered email address or mobile number. Please provide your account identifier, the right you wish to exercise and sufficient detail to locate the relevant data. We may request proportionate information to verify identity and prevent unauthorised disclosure or deletion.</p>
+        <p>We may decline or limit a request where permitted by law, including where we cannot verify identity, the request is fraudulent or repetitive, it would adversely affect another person’s rights, or retention is required for legal claims, fraud prevention, security or compliance. We will explain the reason where legally permitted.</p>
+      </section>
+
+      <section id="s16">
+        <h2><span class="num">16</span><span>Grievance Redressal and Contact Details</span></h2>
+        <p>Zentrix will maintain a readily available grievance mechanism for questions, privacy requests and complaints. The Grievance Officer or designated privacy contact will acknowledge and aim to resolve grievances within 30 days of receipt, or earlier where required by law.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Contact item</th><th>Details to complete</th></tr></thead>
+            <tbody>
+              <tr><td>Legal entity</td><td>Zentrix AI Technologies Pvt Ltd</td></tr>
+              <tr><td>Registered office</td><td>006 GR Luxuria Sector 6 HSR Layout Bangalore 560102</td></tr>
+              <tr><td>Privacy contact</td><td><a href="mailto:connect@zentrixAI.in">connect@zentrixAI.in</a></td></tr>
+              <tr><td>Grievance Officer</td><td>Mr kamath</td></tr>
+              <tr><td>Grievance email</td><td><a href="mailto:Kamath@zentrixai.in">Kamath@zentrixai.in</a></td></tr>
+              <tr><td>Security incident contact</td><td><a href="mailto:connect@zentrixAI.in">connect@zentrixAI.in</a></td></tr>
+              <tr><td>Data-rights request channel</td><td><a href="mailto:connect@zentrixAI.in">connect@zentrixAI.in</a></td></tr>
+              <tr><td>Telephone</td><td><a href="tel:+919740737474">+919740737474</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Please first give us a reasonable opportunity to resolve your grievance. Where applicable and after exhausting our grievance process, you may make a complaint to the Data Protection Board of India or another competent authority.</p>
+      </section>
+
+      <section id="s17">
+        <h2><span class="num">17</span><span>Changes to this Policy</span></h2>
+        <p>We may update this Policy to reflect changes in law, regulatory guidance, technology, security practices, Platform features or business operations. We will publish the updated version with a revised “Last updated” date. Where a change materially affects the purpose of processing or your choices, we will provide an additional notice and obtain consent where required.</p>
+        <p>We recommend reviewing this Policy periodically. Prior versions should be archived for accountability and audit purposes.</p>
+      </section>
+
+      <section id="s18">
+        <h2><span class="num">18</span><span>Governing Law</span></h2>
+        <p>This Policy is governed by the laws of India. Nothing in this Policy limits any non-waivable rights or remedies available under applicable data-protection, information-technology, consumer-protection, telecom, cyber-security or other law.</p>
+      </section>
+
+    </article>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="shell">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="data:image/png;base64,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" alt="AdPe">
+        <p>Marketing spend paid to the customer. Companies get reach they can trace, people get paid for their free time.</p>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <div class="h">Product</div>
+          <a href="index.html#walkthrough">How it works</a>
+          <a href="index.html#download">Download app</a>
+          <a href="business.html">For business</a>
+        </div>
+        <div>
+          <div class="h">Company</div>
+          <a href="index.html#footer">About</a>
+          <a href="index.html#footer">Careers</a>
+          <a href="index.html#footer">Contact</a>
+        </div>
+        <div>
+          <div class="h">Legal</div>
+          <a href="privacy.html">Privacy</a>
+          <a href="index.html#footer">Terms</a>
+          <a href="#s16">Grievance officer</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 AdPe. All rights reserved.</div>
+      <div class="mono">UBI KARO....</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Highlight the section currently in view in the table of contents.
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+    var map = {};
+    links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+    var sections = Array.prototype.slice.call(document.querySelectorAll('article section[id]'));
+    if (!sections.length || !('IntersectionObserver' in window)) return;
+
+    var visible = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting; });
+      var current = null;
+      for (var i = 0; i < sections.length; i++) {
+        if (visible[sections[i].id]) { current = sections[i].id; break; }
+      }
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (current && map[current]) map[current].classList.add('active');
+    }, { rootMargin: '-90px 0px -60% 0px', threshold: 0 });
+
+    sections.forEach(function (s) { io.observe(s); });
+  })();
+</script>
+
+</body>
+</html>
