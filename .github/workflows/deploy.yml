@@ -59,7 +59,7 @@ jobs:
       - name: Smoke test live site
         run: |
           fail=0
-          for path in "/" "/business" "/privacy"; do
+          for path in "/" "/privacy" "/login"; do
             code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 45 "$SITE_URL$path")
             if [ "$code" = "200" ]; then
               echo "OK   $path -> $code"
